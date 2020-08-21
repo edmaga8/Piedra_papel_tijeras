@@ -7,10 +7,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="boder_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.ppt">
+<BorderPane fx:id="boder_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.ppt">
    <left>
       <ImageView fx:id="i_piedra" fitHeight="91.0" fitWidth="149.0" onMouseClicked="#piedra" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="-50.0" BorderPane.alignment="CENTER">
          <image>
@@ -42,7 +43,10 @@
    <bottom>
       <SplitPane dividerPositions="0.4899665551839465" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <HBox layoutX="-2.0" prefHeight="162.0" prefWidth="295.0" style="-fx-background-image: bodybg;" styleClass="bodybg" stylesheets="@application.css" />
+               </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
                   <TextArea layoutX="51.0" prefHeight="29.0" prefWidth="200.0" />

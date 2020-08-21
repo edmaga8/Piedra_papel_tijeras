@@ -231,7 +231,7 @@ public class ppt extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
-		Parent root = (BorderPane)FXMLLoader.load(getClass().getResource("ppt.fxml"));
+		Parent root = (BorderPane)FXMLLoader.load(getClass().getResource("version2.fxml"));
 		Scene scene = new Scene(root,600,400);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setScene(scene);
