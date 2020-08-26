@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(240,96,204);" styleClass="bodybg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.ppt">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="373.0" minWidth="10.0" prefWidth="373.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.5999755859375" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.0" minWidth="10.0" prefWidth="320.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="266.8" minHeight="10.0" prefHeight="266.8" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="247.79999008178712" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+         <children>
+            <TextField fx:id="txt1" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="txt2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="txt3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="300.0" translateY="50.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="99.0" onMouseClicked="#piedra" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgns/peidra.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#papel" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgns/papel.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#tijeras" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgns/tijera.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
