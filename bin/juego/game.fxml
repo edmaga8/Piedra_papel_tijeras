@@ -47,5 +47,6 @@
             </ImageView>
          </children>
       </HBox>
+      <TextField fx:id="txt4" prefHeight="26.0" prefWidth="222.0" GridPane.columnIndex="2" />
    </children>
 </GridPane>

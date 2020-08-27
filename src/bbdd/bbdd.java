@@ -38,7 +38,7 @@ public class bbdd {
 			 
 			 //Para obtener el puntaje del jugador:
 			 
-			 Statement miStatement2 = miConexion.createStatement();
+			Statement miStatement2 = miConexion.createStatement();
 			ResultSet miResultset = miStatement2.executeQuery("SELECT player FROM resultados");
 			while (miResultset.next()) {
 			y= miResultset.getString("player");

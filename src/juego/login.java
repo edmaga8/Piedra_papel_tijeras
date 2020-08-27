@@ -2,6 +2,7 @@ package juego;
 
 import java.io.IOException;
 
+import bbdd.Validation;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -17,8 +18,10 @@ import javafx.stage.Stage;
 
 public class login extends Application {
 
-	String user =null;
-	String pass =null;
+	String userl =null;
+	String passl =null;
+	String usert=null;
+	String passt= null;
 
     @FXML
     private TextField cuadro1;
@@ -47,15 +50,16 @@ public class login extends Application {
 	*/
 	public void presionado() {
 		
-		user=cuadro1.getText();
-		pass=cuadro2.getText();
+		userl=cuadro1.getText();
+		passl=cuadro2.getText();
 		
-		if(!user.isEmpty() && !pass.isEmpty())
+		passt= Validation.get_pass(userl);
+		if(passt.equals(passl))
 			
 		{	//Platform.exit();
 		//primaryStage.close();
 		ventana2 vnt= new ventana2();
-		vnt.ventana();
+		vnt.ventana(userl);
 		}
 	}
 	

@@ -38,8 +38,6 @@ public class ventana2 {
 	private TextField texto1;
 	@FXML
 
-
-
 	private TextField txt1;
 
 	@FXML
@@ -48,15 +46,24 @@ public class ventana2 {
 	@FXML
 	private TextField txt3;
 	
-	public void ventana() {
+	@FXML
+	private TextField txt4;
+	
+	
+	public void ventana(String x) {
 		Stage second = new Stage();
 		Parent root;
+		
 		try {
 			root = FXMLLoader.load(getClass().getResource("game.fxml"));
 			Scene scene= new Scene(root, 800,600);
+			//txt2.setText("Bienvenido, " + x);
 			second.setScene(scene);
 			second.setResizable(false);
 			second.show();
+			txt4.setVisible(true);
+			txt4.setText("Bienvenido");
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -73,6 +80,7 @@ public class ventana2 {
 			String res= "";
 			String p = null,q,r = null;
 			int pc= selecciones.pc_sel();
+			
 			// 0 = piedra
 			// 1 = papel
 			// 2 = tijera
