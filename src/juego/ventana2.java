@@ -61,8 +61,8 @@ public class ventana2 {
 			second.setScene(scene);
 			second.setResizable(false);
 			second.show();
-			txt4.setVisible(true);
-			txt4.setText("Bienvenido");
+			//txt4.setVisible(true);
+			//txt4.setText("Bienvenido");
 			
 		} catch (IOException e) {
 			e.printStackTrace();
